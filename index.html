@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <title>Pengueat</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700;800&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Audio -->
+    <audio id="Music" src="assets/backgroundmusic.wav" loop></audio>
+    <audio id="gameoversfx" src="assets/gameoversfx.wav"></audio>
+    <audio id="pointsfx" src="assets/point.mp3"></audio>
+
+    <!-- Script -->
+    <script src="https://jsgame.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="https://jsgame.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="https://jsgame.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="game.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Startscreen -->
+    <div id="StartScreen">
+      <h1>Pengueat</h1>
+      <a id="StartButton" href="#">START GAME</a>
+      <p>© 2022 developed by Ava Hidalgo and Demi Cubisino</p>
+    </div>
+
+    <!-- Playground -->
+    <div class="playground" style="display: none">
+      <p class="punkte">0</p>
+      <div class="player">
+        <img src="assets/pinguin.png" alt="swimming penguin" />
+      </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div class="gameover" style="display: none">
+      <h1>GAME OVER</h1>
+      <a id="restart" href="#">Restart</a>
+    </div>
+  </body>
+</html>

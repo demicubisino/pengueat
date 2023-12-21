@@ -1,0 +1,161 @@
+/* Start Screen */
+#StartScreen {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/startscreen.webp");
+  background-size: contain;
+  width: 700px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#StartScreen h1 {
+  font-family: "Oxanium";
+  font-size: 50pt;
+  font-weight: 700;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+#StartScreen a {
+  font-family: "Press Start 2P";
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 18px 10px 20px;
+  border-radius: 5px;
+}
+
+#StartScreen a:hover {
+  color: yellow;
+  border: 3px solid yellow;
+  transition-duration: 0.5s;
+  font-size: 120%;
+}
+
+#StartScreen p {
+  color: white;
+  font-family: "Press Start 2P";
+  margin-top: 100px;
+  font-size: 5pt;
+}
+
+/* Game */
+html {
+  background-color: black;
+}
+
+.playground {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.392), rgba(0, 0, 0, 0.353)),
+    url("assets/background.jpg");
+  background-size: contain;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.player {
+  position: absolute;
+  top: 150px;
+}
+
+.player img {
+  height: 60px;
+}
+
+/* Objects */
+.fishpurple,
+.bottle,
+.sack,
+.fishgreen,
+.toothbrush {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-size: contain;
+}
+
+.fishpurple {
+  background-image: url(assets/fishpurple.png);
+  background-repeat: no-repeat;
+}
+
+.toothbrush {
+  background-image: url(assets/toothbrush.png);
+  background-repeat: no-repeat;
+  width: 50px;
+}
+
+.fishgreen {
+  background-image: url(assets/fishgreen.png);
+  background-repeat: no-repeat;
+}
+
+.bottle {
+  background-image: url(assets/bottle.png);
+  background-repeat: no-repeat;
+}
+
+.sack {
+  background-image: url(assets/sack.png);
+  background-repeat: no-repeat;
+}
+
+/* Points */
+
+.punkte {
+  color: white;
+  font-size: 30pt;
+  font-family: sans-serif;
+  margin-left: 600px;
+  margin-top: 0px;
+}
+
+/* Game Over */
+.gameover {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/startscreen.webp");
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameover h1 {
+  font-family: "Oxanium";
+  font-size: 50pt;
+  font-weight: 700;
+  color: white;
+  margin-top: 150px;
+  margin-left: 160px;
+}
+
+.gameover a {
+  font-family: "Press Start 2P";
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 18px 10px 20px;
+  border-radius: 5px;
+  margin-left: 280px;
+}
+
+.gameover a:hover {
+  color: yellow;
+  border: 3px solid yellow;
+  transition-duration: 0.5s;
+  font-size: 120%;
+}
